@@ -91,19 +91,19 @@ F 3 "" H 5125 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5675 1075 2    50   Input ~ 0
-TRUTH_A_1
+TRUTH_1_A_B
 Wire Wire Line
 	5675 1075 5625 1075
 Text GLabel 5700 1900 2    50   Input ~ 0
-TRUTH_A_2
+TRUTH_1_NA_B
 Wire Wire Line
 	5700 1900 5650 1900
 Text GLabel 5700 2750 2    50   Input ~ 0
-TRUTH_A_3
+TRUTH_1_A_NB
 Wire Wire Line
 	5700 2750 5650 2750
 Text GLabel 5700 3525 2    50   Input ~ 0
-TRUTH_A_4
+TRUTH_1_NA_NB
 Wire Wire Line
 	5700 3525 5650 3525
 $Comp
@@ -303,14 +303,6 @@ Text GLabel 7525 4275 0    50   Input ~ 0
 IN_2
 Text GLabel 7525 4175 0    50   Input ~ 0
 IN_1
-Text GLabel 7525 2775 0    50   Input ~ 0
-TRUTH_A_4
-Text GLabel 7525 2875 0    50   Input ~ 0
-TRUTH_A_3
-Text GLabel 7525 2975 0    50   Input ~ 0
-TRUTH_A_2
-Text GLabel 7525 3075 0    50   Input ~ 0
-TRUTH_A_1
 $Comp
 L Device:R R1
 U 1 1 5F693433
@@ -438,19 +430,19 @@ F 3 "" H 5125 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5675 4675 2    50   Input ~ 0
-TRUTH_B_1
+TRUTH_2_A_B
 Wire Wire Line
 	5675 4675 5625 4675
 Text GLabel 5700 5500 2    50   Input ~ 0
-TRUTH_B_2
+TRUTH_2_NA_B
 Wire Wire Line
 	5700 5500 5650 5500
 Text GLabel 5700 6350 2    50   Input ~ 0
-TRUTH_B_3
+TRUTH_2_A_NB
 Wire Wire Line
 	5700 6350 5650 6350
 Text GLabel 5700 7125 2    50   Input ~ 0
-TRUTH_B_4
+TRUTH_2_NA_NB
 Wire Wire Line
 	5700 7125 5650 7125
 $Comp
@@ -475,14 +467,6 @@ F 3 "~" H 5450 6350 50  0001 C CNN
 	1    5450 6350
 	-1   0    0    1   
 $EndComp
-Text GLabel 7525 3475 0    50   Input ~ 0
-TRUTH_B_4
-Text GLabel 7525 3575 0    50   Input ~ 0
-TRUTH_B_3
-Text GLabel 7525 3675 0    50   Input ~ 0
-TRUTH_B_2
-Text GLabel 7525 3775 0    50   Input ~ 0
-TRUTH_B_1
 Text GLabel 8525 3475 2    50   Input ~ 0
 OUT_2
 $Comp
@@ -551,23 +535,23 @@ $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5F725A80
-P 6875 4150
-F 0 "#PWR09" H 6875 3900 50  0001 C CNN
-F 1 "GND" H 6880 3977 50  0000 C CNN
-F 2 "" H 6875 4150 50  0001 C CNN
-F 3 "" H 6875 4150 50  0001 C CNN
-	1    6875 4150
+P 6750 4150
+F 0 "#PWR09" H 6750 3900 50  0001 C CNN
+F 1 "GND" H 6755 3977 50  0000 C CNN
+F 2 "" H 6750 4150 50  0001 C CNN
+F 3 "" H 6750 4150 50  0001 C CNN
+	1    6750 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7525 3975 6875 3975
+	7525 3975 6750 3975
 Wire Wire Line
-	6875 3975 6875 4150
+	6750 3975 6750 4150
 Wire Wire Line
-	7525 3275 6875 3275
+	7525 3275 6750 3275
 Wire Wire Line
-	6875 3275 6875 3975
-Connection ~ 6875 3975
+	6750 3275 6750 3975
+Connection ~ 6750 3975
 $Comp
 L 74xx:74HC14 U1
 U 3 1 5F6A7163
@@ -794,4 +778,20 @@ Wire Wire Line
 Connection ~ 1700 2975
 Wire Wire Line
 	1700 2975 1700 3425
+Text GLabel 7525 3075 0    50   Input ~ 0
+TRUTH_1_A_B
+Text GLabel 7525 2975 0    50   Input ~ 0
+TRUTH_1_NA_B
+Text GLabel 7525 2875 0    50   Input ~ 0
+TRUTH_1_A_NB
+Text GLabel 7525 2775 0    50   Input ~ 0
+TRUTH_1_NA_NB
+Text GLabel 7525 3775 0    50   Input ~ 0
+TRUTH_2_A_B
+Text GLabel 7525 3675 0    50   Input ~ 0
+TRUTH_2_NA_B
+Text GLabel 7525 3575 0    50   Input ~ 0
+TRUTH_2_A_NB
+Text GLabel 7525 3475 0    50   Input ~ 0
+TRUTH_2_NA_NB
 $EndSCHEMATC
